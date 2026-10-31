@@ -1,9 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
+
 app = FastAPI()
 
 users = []
+
 
 class User(BaseModel):
     name: str
@@ -12,7 +14,7 @@ class User(BaseModel):
 def create_user(user: User):
     users.append(user)
     return {
-        "message": "user created",
+        "message": "user created successfully",
         "data" : user
     }
 @app.put("/users/{user_id}")

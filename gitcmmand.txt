@@ -6,9 +6,9 @@ git branch -M main
 git remote add origin https://github.com/mhabib5073/FastApi-Learning-2026.git
 git push -u origin main
 
-git remote add origin https://github.com/mhabib5073/FastApi-Learning-2026.git
-git branch -M main
-git push -u origin main
+
+git push -u origin [branch name - path-params]
+git switch -c [ne branch name--like- Dynamic-Routes]
 
 Uvicorn bind command
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
